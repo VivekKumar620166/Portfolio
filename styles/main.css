@@ -1,0 +1,349 @@
+/* ==========================================================================
+   PORTFOLITE / VINAY GHAI EXACT CLONE - GLOBAL STYLES & DESIGN TOKENS
+   Portfolio for Vivek Kumar Rai - Flutter & Android Developer
+   ========================================================================== */
+
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #08080a;
+  --bg-card: #0c0c0e;
+  --bg-card-elevated: #121215;
+  --bg-card-hover: #16161a;
+  --bg-pill: rgba(255, 255, 255, 0.05);
+  --bg-pill-active: #ffffff;
+  
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-card: rgba(255, 255, 255, 0.10);
+  --border-card-hover: rgba(255, 255, 255, 0.22);
+  --border-pill: rgba(255, 255, 255, 0.14);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #9a9aa2;
+  --text-muted: #666670;
+  --text-dark: #000000;
+  
+  --accent-glow: rgba(255, 255, 255, 0.15);
+  --accent-lime: #10b981;
+  --accent-cyan: #06b6d4;
+  --accent-purple: #8b5cf6;
+  --accent-orange: #f59e0b;
+  --accent-pink: #f43f5e;
+  
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+  
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  --container-max: 1240px;
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-elevated: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-pill: rgba(15, 23, 42, 0.05);
+  --bg-pill-active: #0f172a;
+  
+  --border-subtle: rgba(15, 23, 42, 0.07);
+  --border-card: rgba(15, 23, 42, 0.09);
+  --border-card-hover: rgba(15, 23, 42, 0.18);
+  --border-pill: rgba(15, 23, 42, 0.12);
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-dark: #ffffff;
+  
+  --accent-glow: rgba(15, 23, 42, 0.06);
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Guarantee icon fonts are never overridden */
+.fa, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands, [class^="fa-"], [class*=" fa-"],
+.fa::before, .fas::before, .far::before, .fab::before, .fa-solid::before, .fa-regular::before, .fa-brands::before, [class^="fa-"]::before, [class*=" fa-"]::before {
+  font-family: "Font Awesome 6 Free" !important;
+}
+.fab, .fa-brands, .fab::before, .fa-brands::before {
+  font-family: "Font Awesome 6 Brands" !important;
+}
+[class^="devicon-"], [class*=" devicon-"], [class^="devicon-"]::before, [class*=" devicon-"]::before {
+  font-family: 'devicon' !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: var(--transition-smooth);
+}
+
+/* Custom Interactive GSAP Cursor Followers */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.custom-cursor-aura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  opacity: 0.45;
+  transition: width 0.25s ease, height 0.25s ease, opacity 0.2s ease;
+}
+
+body:hover .custom-cursor-dot,
+body:hover .custom-cursor-aura {
+  opacity: 1;
+}
+
+/* Section Common Layout */
+.section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.section-header-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-pill);
+  border: 1px solid var(--border-pill);
+  border-radius: var(--radius-pill);
+  padding: 7px 18px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.section-header-pill .pill-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.section-title-large {
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.section-subtitle-text {
+  font-size: clamp(1.05rem, 1.3vw, 1.22rem);
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 780px;
+  margin-bottom: 50px;
+}
+
+/* Glowing Pill Buttons (Identical to Portfolite) */
+.btn-pill-glow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-pill);
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: var(--transition-smooth);
+}
+
+.btn-pill-glow::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: var(--radius-pill);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: -1;
+}
+
+.btn-pill-glow:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-pill-glow:hover::before {
+  opacity: 1;
+}
+
+.btn-pill-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid var(--border-pill);
+  border-radius: var(--radius-pill);
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.btn-pill-secondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-pill-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: var(--radius-pill);
+  padding: 14px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  transition: var(--transition-smooth);
+}
+
+.btn-pill-white:hover {
+  background: #f0f0f0;
+  box-shadow: 0 6px 28px rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Glassmorphic Floating Pill Button (e.g. View Project ↗) */
+.btn-glass-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: var(--radius-pill);
+  padding: 12px 24px;
+  font-size: 14.5px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-smooth);
+}
+
+.btn-glass-pill:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* 3D Tilt Card Base */
+.tilt-card {
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease, border-color 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}

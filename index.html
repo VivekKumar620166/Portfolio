@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Kumar Rai — Flutter & Android Developer | Mobile Engineer</title>
+    <meta name="description" content="Flutter & Android Developer with 2+ years of production experience. Clean Architecture, BLoC, Riverpod, GetX, Provider, Dio, Socket.IO, Fastlane CI/CD, Jetpack Compose.">
+
+    <link rel="canonical" href="https://vivekkumarrai.dev/">
+
+    <!-- Favicon & Browser Tab Icons -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=1">
+    <link rel="shortcut icon" href="favicon.ico?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=1">
+
+    <!-- Search Engine Directives & Meta Robots -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="author" content="Vivek Kumar Rai">
+    <meta name="keywords" content="Vivek Kumar Rai, Vivek Rai, Vivek Kumar, Flutter Developer, Android Developer, Mobile Engineer, Native Android, Kotlin Developer, Clean Architecture, WebHopers, PharmaHopers, PCD Suites, India Mobile App Developer, Freelance Flutter Developer">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp Social Previews -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://vivekkumarrai.dev/">
+    <meta property="og:title" content="Vivek Kumar Rai — Flutter & Android Developer | Mobile Engineer">
+    <meta property="og:description" content="Flutter & Android Developer with 2+ years of production experience building high-scale mobile applications with Clean Architecture, BLoC, Riverpod, Dio & Jetpack Compose.">
+    <meta property="og:image" content="https://vivekkumarrai.dev/assets/images/vivek-profile.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Vivek Kumar Rai — Flutter & Android Developer">
+    <meta property="og:site_name" content="Vivek Kumar Rai Portfolio">
+    <meta property="profile:first_name" content="Vivek">
+    <meta property="profile:last_name" content="Rai">
+    <meta property="profile:username" content="VivekKumar620166">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://vivekkumarrai.dev/">
+    <meta name="twitter:title" content="Vivek Kumar Rai — Flutter & Android Developer | Mobile Engineer">
+    <meta name="twitter:description" content="Flutter & Android Developer with 2+ years of production experience building high-scale mobile applications with Clean Architecture, BLoC, Riverpod, Dio & Jetpack Compose.">
+    <meta name="twitter:image" content="https://vivekkumarrai.dev/assets/images/vivek-profile.jpg">
+
+    <!-- JSON-LD Structured Data for Google Knowledge Graph & Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://vivekkumarrai.dev/#person",
+          "name": "Vivek Kumar Rai",
+          "alternateName": ["Vivek Rai", "Vivek Kumar"],
+          "jobTitle": "Flutter & Android Developer",
+          "description": "Flutter & Android Developer with 2+ years of production experience architecting high-scale reactive mobile applications, pharma marketplaces, enterprise CRM, telephony automation, and mobility platforms.",
+          "url": "https://vivekkumarrai.dev/",
+          "image": "https://vivekkumarrai.dev/assets/images/vivek-profile.jpg",
+          "email": "mailto:vivekkumar620166@gmail.com",
+          "telephone": "+916201662075",
+          "nationality": "Indian",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "WebHopers Infotech PVT. LTD."
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/vivek-kumar-405091215",
+            "https://github.com/VivekKumar620166"
+          ],
+          "knowsAbout": [
+            "Flutter",
+            "Dart",
+            "Native Android",
+            "Kotlin",
+            "Jetpack Compose",
+            "Clean Architecture",
+            "BLoC / Cubit",
+            "Riverpod",
+            "GetX",
+            "Provider",
+            "Dio",
+            "REST APIs",
+            "Hive",
+            "Room Database",
+            "SSL Pinning",
+            "Fastlane",
+            "CI/CD"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://vivekkumarrai.dev/#website",
+          "url": "https://vivekkumarrai.dev/",
+          "name": "Vivek Kumar Rai — Flutter & Android Developer Portfolio",
+          "author": {
+            "@id": "https://vivekkumarrai.dev/#person"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://vivekkumarrai.dev/#profilepage",
+          "url": "https://vivekkumarrai.dev/",
+          "name": "Vivek Kumar Rai — Flutter & Android Developer Portfolio",
+          "about": {
+            "@id": "https://vivekkumarrai.dev/#person"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://vivekkumarrai.dev/assets/images/vivek-profile.jpg"
+          }
+        }
+      ]
+    }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome & Devicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="styles/main.css?v=13">
+    <link rel="stylesheet" href="styles/components.css?v=21">
+
+    <!-- GSAP 3 & ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Prevent Theme Flash & URL Query Param Support -->
+    <script>
+        (function() {
+            try {
+                var urlParams = new URLSearchParams(window.location.search);
+                var themeParam = urlParams.get('theme');
+                var savedTheme = themeParam || localStorage.getItem('theme');
+                if (savedTheme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            } catch(e) {}
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- GSAP Magnetic Cursor Follower -->
+    <div class="custom-cursor-dot" id="cursorDot"></div>
+    <div class="custom-cursor-aura" id="cursorAura"></div>
+
+    <!-- Contact Modal Popup -->
+    <div class="contact-modal-overlay" id="contactModalOverlay">
+        <div class="contact-modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="section-header-pill" style="margin-bottom: 16px;">
+                <span class="pill-dot"></span>
+                Get In Touch
+            </div>
+            <h3 style="font-size: 26px; margin-bottom: 12px;">Let's Build Something Great</h3>
+            <p style="color: #8e8e93; font-size: 14.5px; margin-bottom: 18px;">Have a mobile app project, full-time role, or consulting inquiry? Leave a message.</p>
+            <div class="modal-direct-contact-strip">
+                <a href="mailto:vivekkumar620166@gmail.com" class="modal-contact-item" title="Email directly">
+                    <i class="fas fa-envelope"></i> vivekkumar620166@gmail.com
+                </a>
+                <span class="modal-contact-dot">•</span>
+                <a href="tel:+916201662075" class="modal-contact-item" title="Call directly">
+                    <i class="fas fa-phone"></i> +91 62016 62075
+                </a>
+            </div>
+            <form id="modalContactForm">
+                <input type="text" class="modal-input-field" placeholder="Your Name" required>
+                <input type="email" class="modal-input-field" placeholder="Your Email Address" required>
+                <textarea class="modal-input-field" rows="4" placeholder="Project details or message..." required style="resize: none;"></textarea>
+                <button type="submit" class="btn-pill-glow" style="width: 100%;">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 1. FLOATING NAVBAR (Exact Portfolite style from vinay_01.png) -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#home" class="nav-brand">
+                <div class="nav-brand-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="7" cy="7" r="5"/>
+                        <circle cx="17" cy="7" r="5"/>
+                        <circle cx="7" cy="17" r="5"/>
+                        <circle cx="17" cy="17" r="5"/>
+                    </svg>
+                </div>
+                <span>Vivek Rai</span>
+            </a>            <div class="nav-right-group">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="assets/Vivek_Kumar_Rai_Resume.pdf?v=2" target="_blank" class="nav-link">Resume</a></li>
+                </ul>
+
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light and Dark Mode" title="Toggle Light/Dark Theme">
+                    <i class="fas fa-sun" id="themeToggleIcon"></i>
+                </button>
+
+                <button class="nav-cta-btn open-contact-modal desktop-only">
+                    <i class="far fa-user"></i>
+                    <span>Contact Me</span>
+                </button>
+
+                <!-- Mobile Hamburger Toggle Button -->
+                <button class="nav-mobile-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+            <div class="mobile-nav-content">
+                <ul class="mobile-nav-links">
+                    <li><a href="#about" class="mobile-nav-link"><i class="far fa-user"></i><span>About Me</span></a></li>
+                    <li><a href="#services" class="mobile-nav-link"><i class="fas fa-layer-group"></i><span>Services</span></a></li>
+                    <li><a href="#projects" class="mobile-nav-link"><i class="fas fa-briefcase"></i><span>Projects</span></a></li>
+                    <li><a href="assets/Vivek_Kumar_Rai_Resume.pdf?v=2" target="_blank" class="mobile-nav-link"><i class="far fa-file-alt"></i><span>Resume</span></a></li>
+                </ul>
+                <div class="mobile-nav-actions">
+                    <button class="btn-pill-glow open-contact-modal mobile-menu-contact-btn" style="width: 100%;">
+                        <i class="far fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </button>
+                    <div class="mobile-nav-direct-contacts">
+                        <a href="mailto:vivekkumar620166@gmail.com" class="mobile-nav-contact-badge">
+                            <i class="fas fa-envelope"></i>
+                            <span>vivekkumar620166@gmail.com</span>
+                        </a>
+                        <a href="tel:+916201662075" class="mobile-nav-contact-badge">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 62016 62075</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <!-- 2. TOP HERO INTRO BANNER (100% exact replica of live vinayghai.framer.website) -->
+        <section class="hero-intro-section">
+            <div class="hero-smoke-backdrop"></div>
+            
+            <div class="hero-intro-content">
+                <!-- Badge Pill -->
+                <div class="hero-badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>Flutter & Android Developer · Mobile Engineer</span>
+                </div>
+
+                <!-- Main Display Headline -->
+                <h1 class="hero-main-title">
+                    Building production<br>mobile applications with<br>Flutter & Android.
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="hero-subtitle">
+                    Building production mobile applications with Flutter and Native Android, with hands-on experience in payments, e-commerce, real-time systems, APIs, background processing, maps, security, performance, and platform integration.
+                </p>
+
+                <!-- Dual Action Pill Buttons -->
+                <div class="hero-cta-buttons">
+                    <a href="#projects" class="btn-pill-glow-border">
+                        <span>View Projects</span>
+                    </a>
+                    <a href="assets/Vivek_Kumar_Rai_Resume.pdf?v=2" target="_blank" class="btn-pill-glow-border">
+                        <span>My Resume</span>
+                    </a>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="hero-scroll-indicator" id="heroScrollCue">
+                    <span class="scroll-cue-text">Scroll down</span>
+                    <span class="scroll-line-divider"></span>
+                    <div class="mouse-scroll-icon">
+                        <div class="mouse-wheel-dot"></div>
+                    </div>
+                    <span class="scroll-line-divider"></span>
+                    <span class="scroll-cue-text">to explore projects & architecture</span>
+                </div>
+
+                <!-- 4 Metrics Stats Row -->
+                <div class="hero-stats-row">
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number">2+</div>
+                        <div class="hero-stat-label">Years of<br>Experience</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number">5+</div>
+                        <div class="hero-stat-label">Production<br>Apps Shipped</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number">60</div>
+                        <div class="hero-stat-label">FPS Smooth<br>Performance</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number">99.9%</div>
+                        <div class="hero-stat-label">Crash-Free<br>User Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. HERO CAROUSEL & PROJECT SWITCHER (vinay_01.png & live site) -->
+        <section class="hero-carousel-section" id="projects">
+            <div class="carousel-viewport">
+                <div class="carousel-track">
+                    <!-- 1. PharmaHopers (India's Leading B2B Pharma Portal) -->
+                    <div class="carousel-card tilt-card" data-category="major portal" data-url="https://www.pharmahopers.com/">
+                        <img src="assets/images/projects/pharmahopers-showcase.png" alt="PharmaHopers - B2B Pharma Marketplace & Portal" class="carousel-card-img">
+                        <div class="carousel-card-gradient"></div>
+                        <div class="carousel-floating-btn">
+                            <a href="https://www.pharmahopers.com/" target="_blank" rel="noopener noreferrer" class="btn-glass-pill">View Project ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- 2. PCD Suites (Featured: Pharma Sales & CRM Automation) -->
+                    <div class="carousel-card tilt-card" data-category="major app" data-url="https://www.pcdsuites.com/">
+                        <img src="assets/images/projects/pcdsuites-showcase.png" alt="PCD Suites - Pharma Sales Automation Platform" class="carousel-card-img">
+                        <div class="carousel-card-gradient"></div>
+                        <div class="carousel-floating-btn">
+                            <a href="https://www.pcdsuites.com/" target="_blank" rel="noopener noreferrer" class="btn-glass-pill">View Project ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- 3. Local Ride (Canada Autonomous Taxi & Mobility Platform) -->
+                    <div class="carousel-card tilt-card" data-category="app" data-url="https://localride.co/">
+                        <img src="assets/images/projects/localride-showcase.png" alt="Local Ride - Autonomous Mobility & Ride Hailing" class="carousel-card-img">
+                        <div class="carousel-card-gradient"></div>
+                        <div class="carousel-floating-btn">
+                            <a href="https://localride.co/" target="_blank" rel="noopener noreferrer" class="btn-glass-pill">View Project ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- 4. Glopetra (The Dermascience Skincare App & E-Commerce) -->
+                    <div class="carousel-card tilt-card" data-category="app" data-url="https://glopetra.com/">
+                        <img src="assets/images/projects/glopetra-showcase.png" alt="Glopetra - The Dermascience Skincare Mobile App" class="carousel-card-img">
+                        <div class="carousel-card-gradient"></div>
+                        <div class="carousel-floating-btn">
+                            <a href="https://glopetra.com/" target="_blank" rel="noopener noreferrer" class="btn-glass-pill">View Project ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segmented Control Filter Pill -->
+            <div class="hero-filter-wrapper">
+                <div class="filter-pill-box">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="major">Major Projects</button>
+                </div>
+            </div>
+        </section>
+
+                <!-- 4. FEATURED CASE STUDY SECTION (PharmaHopers B2B Portal) -->
+        <!-- 4. FEATURED CASE STUDY SECTION (Dual Flagship Portals) -->
+        <section id="case-study" class="case-study-section section">
+            <div class="container">
+                <div class="section-header-pill">
+                    <span class="pill-dot"></span>
+                    Featured Flagship Portals
+                </div>
+
+                <div class="case-study-main-header">
+                    <h2 class="case-study-hero-title">
+                        Transforming India's largest B2B Pharma marketplace & business suite into fast, intuitive portals
+                    </h2>
+                    <p class="case-study-hero-desc">
+                        Production enterprise web portals powering 500+ top pharma companies, distributors, and buyers across India with instant lead management, verified inquiries, and real-time sales automation.
+                    </p>
+                </div>
+
+                <!-- Dual Flagship Desktop Showcases in Same Row -->
+                <div class="flagship-duo-grid">
+                    <!-- Card 1: PharmaHopers B2B Portal -->
+                    <div class="flagship-portal-card tilt-card" data-url="https://www.pharmahopers.com/">
+                        <div class="flagship-portal-header">
+                            <div class="flagship-badge-row">
+                                <span class="portal-badge-pill"><i class="fas fa-store"></i> B2B Pharma Marketplace</span>
+                                <span class="portal-year-pill">2026 – Present</span>
+                            </div>
+                            <h3 class="flagship-card-title">PharmaHopers B2B Portal</h3>
+                            <p class="flagship-card-desc">
+                                India's leading B2B pharma marketplace connecting 500+ manufacturers, suppliers, and distributors with verified lead generation, instant trade inquiries, and dynamic credit balance tracking.
+                            </p>
+                        </div>
+                        <div class="mockup-display-container compact-mockup">
+                            <div class="mockup-inner-screen">
+                                <img src="assets/images/projects/pharmahopers-dashboard.png" alt="PharmaHopers B2B Dashboard & Lead Management">
+                            </div>
+                            <div class="mockup-cta-overlay">
+                                <a href="https://www.pharmahopers.com/" target="_blank" rel="noopener noreferrer" class="btn-pill-glow">Take a Look on PharmaHopers ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: PCD Suites Business Suite -->
+                    <div class="flagship-portal-card tilt-card" data-url="https://www.pcdsuites.com/">
+                        <div class="flagship-portal-header">
+                            <div class="flagship-badge-row">
+                                <span class="portal-badge-pill pcd-badge"><i class="fas fa-laptop-medical"></i> Enterprise Pharma ERP</span>
+                                <span class="portal-year-pill">2024 – 2025</span>
+                            </div>
+                            <h3 class="flagship-card-title">PCD Suites Business Suite</h3>
+                            <p class="flagship-card-desc">
+                                All-in-one pharma business management platform trusted by 500+ clients with 1000+ quality products across 15+ therapeutic divisions featuring digital visual aids and order booking.
+                            </p>
+                        </div>
+                        <div class="mockup-display-container compact-mockup">
+                            <div class="mockup-inner-screen">
+                                <img src="assets/images/projects/pcdsuites-dashboard.png" alt="PCD Suites Enterprise Business Suite Dashboard">
+                            </div>
+                            <div class="mockup-cta-overlay">
+                                <a href="https://www.pcdsuites.com/" target="_blank" rel="noopener noreferrer" class="btn-pill-glow">Take a Look on PCD Suites ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-specs-grid">
+                    <div class="spec-item">
+                        <i class="fas fa-building spec-icon"></i>
+                        <div>
+                            <div class="spec-label">CLIENT</div>
+                            <div class="spec-value" id="specClient">WebHopers</div>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-industry spec-icon"></i>
+                        <div>
+                            <div class="spec-label">INDUSTRY</div>
+                            <div class="spec-value" id="specIndustry">Business Management</div>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="far fa-clock spec-icon"></i>
+                        <div>
+                            <div class="spec-label">DURATION</div>
+                            <div class="spec-value" id="specDuration">2 Years</div>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="far fa-user spec-icon"></i>
+                        <div>
+                            <div class="spec-label">ROLE</div>
+                            <div class="spec-value" id="specRole">Flutter Developer</div>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-mobile-alt spec-icon"></i>
+                        <div>
+                            <div class="spec-label">PLATFORM</div>
+                            <div class="spec-value" id="specPlatform">All Platforms</div>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-palette spec-icon"></i>
+                        <div>
+                            <div class="spec-label">TOOLS</div>
+                            <div class="spec-value" id="specTools">Flutter, BLoC, Riverpod, GetX, Dio</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Bento Overview Cards (Dynamic by Portal) -->
+                <div class="bento-quad-grid">
+                    <div class="bento-quad-card tilt-card">
+                        <h3>Overview</h3>
+                        <p id="bentoOverview">India's leading B2B pharmaceutical marketplace connecting 500+ top pharma companies and thousands of verified buyers. Built with Flutter to deliver real-time lead alerts, verified inquiries, credit balance tracking, and seamless catalogue discovery.</p>
+                    </div>
+                    <div class="bento-quad-card tilt-card">
+                        <h3>Challenge</h3>
+                        <p id="bentoChallenge">The legacy portal was desktop-heavy and transactional. Sellers struggled to track live buyer leads on mobile, manage package credits on the go, and respond quickly to high-value franchise inquiries.</p>
+                    </div>
+                    <div class="bento-quad-card tilt-card">
+                        <h3>Approach</h3>
+                        <p id="bentoApproach">Architected a robust cross-platform app using Clean Architecture with BLoC & Riverpod reactive state flow. Integrated Dio with custom interceptors for token refresh, built cached catalog feeds, and designed responsive mobile-first dashboards.</p>
+                    </div>
+                    <div class="bento-quad-card tilt-card">
+                        <h3>Outcome</h3>
+                        <p id="bentoOutcome">Reduced lead response time by 45%, achieved 99.8% crash-free sessions across Android & iOS, and streamlined daily lead purchases for thousands of active distributors.</p>
+                    </div>
+                </div>
+
+                <!-- 4. DEVELOPMENT PROCESS STEPPER -->
+                <div class="process-section">
+                    <h2 class="section-headline">Development & Architecture Process</h2>
+                    <div class="stepper-card-box">
+                        <div class="step-node">
+                            <div class="step-icon-bubble"><i class="fas fa-layer-group"></i></div>
+                            <span>Clean Architecture</span>
+                        </div>
+                        <div class="step-divider-arrow">→</div>
+                        <div class="step-node">
+                            <div class="step-icon-bubble"><i class="fas fa-network-wired"></i></div>
+                            <span>Dio & REST API</span>
+                        </div>
+                        <div class="step-divider-arrow">→</div>
+                        <div class="step-node">
+                            <div class="step-icon-bubble"><i class="fas fa-bolt"></i></div>
+                            <span>BLoC State</span>
+                        </div>
+                        <div class="step-divider-arrow">→</div>
+                        <div class="step-node">
+                            <div class="step-icon-bubble"><i class="fas fa-vial"></i></div>
+                            <span>QA & Profiling</span>
+                        </div>
+                        <div class="step-divider-arrow">→</div>
+                        <div class="step-node">
+                            <div class="step-icon-bubble"><i class="fas fa-rocket"></i></div>
+                            <span>CI/CD Store Release</span>
+                        </div>
+                    </div>
+
+                    <!-- 5 Key Architecture Decisions Bento Cards -->
+                    <h2 class="section-headline">Core Architectural Decisions</h2>
+                    <div class="key-decisions-grid">
+                        <div class="decision-card tilt-card">
+                            <i class="fas fa-cubes decision-icon"></i>
+                            <h4>BLoC State Management</h4>
+                            <p>Predictable event-driven reactive architecture separating business logic from presentation.</p>
+                        </div>
+                        <div class="decision-card tilt-card">
+                            <i class="fas fa-shield-alt decision-icon"></i>
+                            <h4>Robust Dio Networking</h4>
+                            <p>Custom interceptors for JWT renewal, request caching, and resilient error recovery.</p>
+                        </div>
+                        <div class="decision-card tilt-card">
+                            <i class="fas fa-mobile-alt decision-icon"></i>
+                            <h4>Platform-Adaptive UI</h4>
+                            <p>Unified design tokens, responsive layouts, and native feel across iOS & Android.</p>
+                        </div>
+                        <div class="decision-card tilt-card">
+                            <i class="fas fa-bell decision-icon"></i>
+                            <h4>Real-Time Lead Alerts</h4>
+                            <p>Background sync and instant push notifications so dealers never miss buyer inquiries.</p>
+                        </div>
+                        <div class="decision-card tilt-card">
+                            <i class="fas fa-tachometer-alt decision-icon"></i>
+                            <h4>High-FPS Catalog Feed</h4>
+                            <p>Virtual lazy-loaded lists and image caching optimized for extensive pharma catalog.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CRAFTING THOUGHTFUL MOBILE EXPERIENCES (vinay_07, 08, 09) -->
+        <section id="mobile-experience" class="mobile-experience-section section">
+            <div class="container">
+                <div class="section-header-pill">
+                    <span class="pill-dot"></span>
+                    Mobile Experience
+                </div>
+
+                <h2 class="section-title-large">
+                    Crafting High-Performance Mobile Experiences
+                </h2>
+
+                <p class="section-subtitle-text">
+                    A curated selection of mobile applications built with Clean Architecture, reactive state management (BLoC, Riverpod, GetX, Provider), and refined native interactions — built for iOS and Android.
+                </p>
+
+                <!-- 4 Bento Cards Below (No Clunky Double Frame, 100% Full Visibility) -->
+                <div class="mobile-grid-dual" style="margin-top: 48px;">
+                    <!-- Card 1: PharmaHopers B2B Portal -->
+                    <div class="mobile-bento-card card-pharmahopers tilt-card" data-url="https://www.pharmahopers.com/">
+                        <div class="mobile-mockup-wrapper">
+                            <img src="assets/images/projects/pharmahopers-app.png" alt="PharmaHopers B2B Mobile App" class="mobile-mockup-img">
+                        </div>
+                        <div class="mobile-card-meta">
+                            <div class="meta-info-col">
+                                <div class="meta-info-title">PharmaHopers B2B Portal</div>
+                                <div class="meta-info-sub">iOS & Android · B2B Pharma · 2026</div>
+                            </div>
+                            <div class="store-links-group">
+                                <a href="https://play.google.com/store/apps/details?id=com.webhopers.pharmahopers.app" target="_blank" rel="noopener noreferrer" class="store-badge-btn playstore-btn" title="Pharmahopers on Google Play Store">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Play Store</span>
+                                </a>
+                                <a href="https://apps.apple.com/in/app/pharmahopers-b2b-marketplace/id1570393988" target="_blank" rel="noopener noreferrer" class="store-badge-btn appstore-btn" title="Pharmahopers on Apple App Store">
+                                    <i class="fab fa-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: PCD Suites Mobile (Pharma Sales Automation) -->
+                    <div class="mobile-bento-card card-pcdsuites tilt-card" data-url="https://www.pcdsuites.com/">
+                        <div class="mobile-mockup-wrapper">
+                            <img src="assets/images/projects/pcdsuites-app.png?v=2" alt="PCD Suites Mobile App" class="mobile-mockup-img">
+                        </div>
+                        <div class="mobile-card-meta">
+                            <div class="meta-info-col">
+                                <div class="meta-info-title">PCD Suites</div>
+                                <div class="meta-info-sub">iOS & Android · Pharma Sales Automation · 2025</div>
+                            </div>
+                            <div class="store-links-group">
+                                <a href="https://play.google.com/store/apps/details?id=com.pharmademo.app&hl=en_IN" target="_blank" rel="noopener noreferrer" class="store-badge-btn playstore-btn" title="PCD Suites Demo on Google Play Store">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Play Store</span>
+                                </a>
+                                <a href="https://apps.apple.com/in/app/wh-pharma-pcd-franchisee/id1585954349" target="_blank" rel="noopener noreferrer" class="store-badge-btn appstore-btn" title="WH Pharma PCD on Apple App Store">
+                                    <i class="fab fa-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Local Ride Mobility -->
+                    <div class="mobile-bento-card card-localride tilt-card" data-url="https://localride.co/">
+                        <div class="mobile-mockup-wrapper">
+                            <img src="assets/images/projects/localride-app.png" alt="Local Ride Canada Mobility App" class="mobile-mockup-img">
+                        </div>
+                        <div class="mobile-card-meta">
+                            <div class="meta-info-col">
+                                <div class="meta-info-title">Local Ride Canada</div>
+                                <div class="meta-info-sub">iOS & Android · Mobility · 2025</div>
+                            </div>
+                            <div class="store-links-group">
+                                <a href="https://play.google.com/store/apps/developer?id=LocalRide&hl=en_IN" target="_blank" rel="noopener noreferrer" class="store-badge-btn playstore-btn" title="LocalRide on Google Play Store">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Play Store</span>
+                                </a>
+                                <a href="https://apps.apple.com/in/app/local-ride-partner/id6748531525" target="_blank" rel="noopener noreferrer" class="store-badge-btn appstore-btn" title="Local Ride Partner on Apple App Store">
+                                    <i class="fab fa-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: GloPetra Skincare -->
+                    <div class="mobile-bento-card card-glopetra tilt-card" data-url="https://glopetra.com/">
+                        <div class="mobile-mockup-wrapper">
+                            <img src="assets/images/projects/glopetra-app.png" alt="GloPetra Skincare E-Commerce" class="mobile-mockup-img">
+                        </div>
+                        <div class="mobile-card-meta">
+                            <div class="meta-info-col">
+                                <div class="meta-info-title">GloPetra</div>
+                                <div class="meta-info-sub">iOS & Android · E-Commerce · 2024</div>
+                            </div>
+                            <div class="store-links-group">
+                                <a href="https://play.google.com/store/apps/details?id=com.webhopers.glopetra&hl=en_IN" target="_blank" rel="noopener noreferrer" class="store-badge-btn playstore-btn" title="GloPetra on Google Play Store">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Play Store</span>
+                                </a>
+                                <a href="https://glopetra.com/" target="_blank" rel="noopener noreferrer" class="store-badge-btn webstore-btn" title="GloPetra D2C Official Store">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>D2C Store</span>
+                                </a>
+                            </div>
+                        </div>                    </div>
+                </div>
+
+                <!-- Flagship Enterprise Project: Pharma Lead Verification & Telecaller Suite -->
+                <div class="enterprise-telecaller-card tilt-card">
+                    <div class="telecaller-split-layout">
+                        <!-- Left Column: Architecture & Project Details -->
+                        <div class="telecaller-info-content">
+                            <div class="telecaller-badge-row">
+                                <span class="badge-android"><i class="fab fa-android"></i> Native Android</span>
+                                <span class="badge-year">2026 – Present</span>
+                                <span class="badge-enterprise"><i class="fas fa-shield-alt"></i> Enterprise Telephony Automation</span>
+                            </div>
+                            
+                            <h3 class="telecaller-title">Pharma Lead Verification (Telecaller Suite)</h3>
+                            <p class="telecaller-role-sub">
+                                <strong>Native Android Platform</strong> · Kotlin · Jetpack Compose (Material 3) · WebHopers Infotech
+                            </p>
+                            
+                            <p class="telecaller-desc">
+                                High-performance internal Android telephony & lead verification automation application built for pharma enterprise sales operations. Delivers real-time call recording discovery across OEM storage, automated CRM sync, and reliable background processing.
+                            </p>
+
+                            <div class="telecaller-highlights-grid">
+                                <div class="telecaller-highlight-card">
+                                    <div class="highlight-icon-box cyan"><i class="fas fa-layer-group"></i></div>
+                                    <div>
+                                        <strong>12+ Jetpack Compose Screens</strong>
+                                        <span>Material 3 UI, custom draggable floating audio player & active call overlay</span>
+                                    </div>
+                                </div>
+                                <div class="telecaller-highlight-card">
+                                    <div class="highlight-icon-box purple"><i class="fas fa-microphone-alt"></i></div>
+                                    <div>
+                                        <strong>MediaStore Storage Scanner</strong>
+                                        <span>Automated call recording discovery across OEM storage (Android 13/14 granular permissions)</span>
+                                    </div>
+                                </div>
+                                <div class="telecaller-highlight-card">
+                                    <div class="highlight-icon-box emerald"><i class="fas fa-cloud-upload-alt"></i></div>
+                                    <div>
+                                        <strong>WorkManager & AWS S3 Sync</strong>
+                                        <span>Resilient background workers with exponential backoff uploading audio after device reboots</span>
+                                    </div>
+                                </div>
+                                <div class="telecaller-highlight-card">
+                                    <div class="highlight-icon-box amber"><i class="fas fa-phone-volume"></i></div>
+                                    <div>
+                                        <strong>TelephonyManager & CallLog</strong>
+                                        <span>Automated call duration tracking, buyer dialer integration & real-time CRM updates</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="telecaller-tech-tags">
+                                <span class="tech-tag-pill">Kotlin</span>
+                                <span class="tech-tag-pill">Jetpack Compose</span>
+                                <span class="tech-tag-pill">Material 3</span>
+                                <span class="tech-tag-pill">WorkManager</span>
+                                <span class="tech-tag-pill">Room DB</span>
+                                <span class="tech-tag-pill">TelephonyManager</span>
+                                <span class="tech-tag-pill">MediaStore API</span>
+                                <span class="tech-tag-pill">AWS S3</span>
+                                <span class="tech-tag-pill">Foreground Services</span>
+                                <span class="tech-tag-pill">Hilt DI</span>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Confidential Company Asset Card -->
+                        <div class="telecaller-tech-visual">
+                            <div class="telecaller-confidential-card">
+                                <div class="confidential-shield-header">
+                                    <div class="shield-icon-badge">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div>
+                                        <div class="confidential-pill">
+                                            <span class="dot-amber"></span> Proprietary Company Asset · Under NDA
+                                        </div>
+                                        <h4 class="confidential-title">Internal Enterprise Telephony System</h4>
+                                    </div>
+                                </div>
+
+                                <div class="confidential-notice-box">
+                                    <i class="fas fa-lock notice-lock-icon"></i>
+                                    <p>
+                                        This application is an internal proprietary asset developed exclusively for <strong>WebHopers Infotech</strong> enterprise telecalling & sales operations. In compliance with strict company confidentiality, non-disclosure agreements (NDA), and customer data protection protocols, live application UI screenshots and source code are withheld.
+                                    </p>
+                                </div>
+
+                                <div class="confidential-specs-list">
+                                    <div class="spec-row-item">
+                                        <span class="spec-label"><i class="fas fa-building"></i> Deployment</span>
+                                        <span class="spec-val">Internal Enterprise Distribution</span>
+                                    </div>
+                                    <div class="spec-row-item">
+                                        <span class="spec-label"><i class="fas fa-shield-alt"></i> Data Security</span>
+                                        <span class="spec-val">Encrypted AWS S3 Audio Vault & Presigned URIs</span>
+                                    </div>
+                                    <div class="spec-row-item">
+                                        <span class="spec-label"><i class="fas fa-cogs"></i> OS Compatibility</span>
+                                        <span class="spec-val">Android 10 to 14 (Granular OEM Storage Compliance)</span>
+                                    </div>
+                                    <div class="spec-row-item">
+                                        <span class="spec-label"><i class="fas fa-satellite-dish"></i> Operational Status</span>
+                                        <span class="spec-val active-status"><span class="status-live-dot"></span> Active Daily Enterprise Usage</span>
+                                    </div>
+                                </div>
+
+                                <div class="confidential-watermark-row">
+                                    <i class="fab fa-android"></i>
+                                    <span>Native Android Enterprise Solution · High-Scale Pharma Sales Engine</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================================================
+             5. LARGE-SCALE MOBILE SYSTEM DESIGN & ARCHITECTURE (HLD & LLD)
+             ========================================================================== -->
+        <section id="system-design" class="system-design-section section">
+            <div class="container">
+                <!-- Section Header Design -->
+                <div class="system-design-header">
+                    <div class="section-header-pill" style="margin-bottom: 14px; display: inline-flex;">
+                        <span class="pill-dot" style="background: #10b981;"></span>
+                        Enterprise System Blueprint
+                    </div>
+                    <h2 class="section-title-large">Architecting Large-Scale Mobile Systems</h2>
+                    <p class="section-subtitle-text">
+                        End-to-End High-Level (HLD) distributed topology & Low-Level (LLD) Clean Architecture data pipelines engineered for low latency, zero data loss, sub-second cold starts, and offline fault tolerance.
+                    </p>
+                </div>
+
+                <!-- Interactive Tab View Switcher -->
+                <div class="sys-design-nav-wrapper">
+                    <div class="sys-design-tabs">
+                        <button class="sys-tab-btn active" data-view="hld">
+                            <i class="fas fa-network-wired"></i>
+                            <span>1. High-Level Distributed Topology (HLD)</span>
+                        </button>
+                        <button class="sys-tab-btn" data-view="lld">
+                            <i class="fas fa-layer-group"></i>
+                            <span>2. Client Clean Architecture & Data Flow (LLD)</span>
+                        </button>
+                        <button class="sys-tab-btn" data-view="concurrency">
+                            <i class="fas fa-microchip"></i>
+                            <span>3. Concurrency, Isolates & Background Sync</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- View Container -->
+                                <!-- Interactive Views Wrapper -->
+                <div class="sys-views-wrapper">
+                    
+                    <!-- ==========================================
+                         VIEW 1: HIGH-LEVEL DISTRIBUTED ARCHITECTURE (HLD)
+                         ========================================== -->
+                    <div class="sys-view-card active" id="view-hld">
+                        <div class="sys-diagram-header">
+                            <div class="sys-diagram-header-left">
+                                <span class="sys-badge-pill green"><i class="fas fa-network-wired"></i> High-Level System Architecture (HLD)</span>
+                                <h3 class="sys-canvas-title">Distributed Mobile Ecosystem & Real-Time Topology</h3>
+                            </div>
+                            <div class="sys-diagram-desc">
+                                End-to-end distributed system flow from mobile edge clients (Flutter & Native Android) through secure API gateways to scalable microservices clusters and distributed cloud persistence.
+                            </div>
+                        </div>
+
+                        <!-- Graphical Architecture Canvas -->
+                        <div class="arch-diagram-visual-wrap">
+                            <div class="arch-diagram-img-frame" data-diag-src="assets/images/architecture/hld-system-architecture.jpg" data-diag-title="Distributed Mobile Ecosystem (HLD)" data-diag-caption="Mobile App Edge (Flutter & Kotlin) ➔ TLS 1.3 & SSL Pinning ➔ API Gateway & Reverse Proxy (Security Shield: Auth, JWT, WAF) ➔ Microservices Cluster (User, Order, Catalog, Notification) ➔ Distributed Cloud Persistence (PostgreSQL, MongoDB, Redis Cache & AWS Encrypted Vault).">
+                                <img src="assets/images/architecture/hld-system-architecture.jpg" alt="High-Level Distributed System Architecture Diagram" class="arch-diagram-img" loading="lazy">
+                                <div class="arch-diagram-overlay">
+                                    <span class="zoom-pill"><i class="fas fa-expand"></i> Click to Zoom Fullscreen</span>
+                                </div>
+                            </div>
+                            <div class="arch-spec-strip">
+                                <div class="arch-spec-chip"><i class="fas fa-shield-halved" style="color: #38bdf8;"></i> <div><strong>Transport Security:</strong> SHA-256 SSL Pinning, mTLS & TLS 1.3</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-network-wired" style="color: #a855f7;"></i> <div><strong>API Gateway Hub:</strong> Reverse proxy, token mutex lock, rate limiting</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-cubes" style="color: #10b981;"></i> <div><strong>Microservices:</strong> REST & GraphQL decoupled services + FCM push</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-database" style="color: #f59e0b;"></i> <div><strong>Cloud Persistence:</strong> Redis cache, PostgreSQL, Mongo & AWS S3</div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==========================================
+                         VIEW 2: CLIENT CLEAN ARCHITECTURE & DATA FLOW (LLD)
+                         ========================================== -->
+                    <div class="sys-view-card" id="view-lld">
+                        <div class="sys-diagram-header">
+                            <div class="sys-diagram-header-left">
+                                <span class="sys-badge-pill purple"><i class="fas fa-cubes"></i> Low-Level Design (LLD)</span>
+                                <h3 class="sys-canvas-title">Unidirectional Clean Architecture Data Flow</h3>
+                            </div>
+                            <div class="sys-diagram-desc">
+                                Strict separation of concerns where the Domain core remains 100% isolated from UI frameworks, databases, and third-party SDKs, guaranteeing maintainability and testability.
+                            </div>
+                        </div>
+
+                        <!-- Graphical LLD Schematic Flow -->
+                        <div class="arch-diagram-visual-wrap">
+                            <div class="arch-diagram-img-frame" data-diag-src="assets/images/architecture/lld-clean-architecture.jpg" data-diag-title="Clean Architecture Unidirectional Flow (LLD)" data-diag-caption="01 Presentation (Flutter UI Widget & Compose) ➔ 02 State Machine (BLoC / Cubit Event Handler) ➔ 03 Domain Core (Pure Dart Business Logic & Isolated UseCase) ➔ 04 Data Repository (Bifurcation: Hive/Room Local Storage vs Dio/GraphQL Remote API) ➔ 05 Reactive Rebuild (60 FPS Immutable State Emission).">
+                                <img src="assets/images/architecture/lld-clean-architecture.jpg" alt="Client Clean Architecture Data Flow Diagram" class="arch-diagram-img" loading="lazy">
+                                <div class="arch-diagram-overlay">
+                                    <span class="zoom-pill"><i class="fas fa-expand"></i> Click to Zoom Fullscreen</span>
+                                </div>
+                            </div>
+                            <div class="arch-spec-strip">
+                                <div class="arch-spec-chip"><i class="fas fa-fingerprint" style="color: #38bdf8;"></i> <div><strong>01 Presentation:</strong> Reactive Flutter widgets and Jetpack Compose screens</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-gears" style="color: #a855f7;"></i> <div><strong>02 State Machine:</strong> BLoC/Cubit event streams with predictable state emissions</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-circle-nodes" style="color: #10b981;"></i> <div><strong>03 Domain Core:</strong> 100% pure business logic contracts decoupled from UI</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-shuffle" style="color: #f59e0b;"></i> <div><strong>04 Repository:</strong> Cache-first (Hive/Room) with background Dio/GraphQL sync</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-display" style="color: #ec4899;"></i> <div><strong>05 Reactive Rebuild:</strong> 60 FPS immutable state emission with zero UI frame jank</div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==========================================
+                         VIEW 3: CONCURRENCY, ISOLATES & RESILIENCE
+                         ========================================== -->
+                    <div class="sys-view-card" id="view-concurrency">
+                        <div class="sys-diagram-header">
+                            <div class="sys-diagram-header-left">
+                                <span class="sys-badge-pill amber"><i class="fas fa-bolt"></i> Concurrency & Fault Tolerance</span>
+                                <h3 class="sys-canvas-title">Multi-Thread Concurrency & Mutex State Machine</h3>
+                            </div>
+                            <div class="sys-diagram-desc">
+                                Production multi-threading and concurrency architecture: UI Isolate 16.6ms budget, background worker compute() isolates, Dio QueuedInterceptor 401 mutex, and OS-level WorkManager resilience.
+                            </div>
+                        </div>
+
+                        <!-- Graphical Concurrency Schematics Canvas -->
+                        <div class="arch-diagram-visual-wrap">
+                            <div class="arch-diagram-img-frame" data-diag-src="assets/images/architecture/concurrency-resilience.jpg" data-diag-title="Concurrency, Isolates & Mutex Resilience" data-diag-caption="Top: Thread Concurrency & Isolates (Main UI Isolate with 16.6ms 60 FPS frame budget ⇕ SendPort/ReceivePort ⇕ Background Worker Isolate for Heavy JSON & Image Processing). Bottom: Dio Token Mutex State Machine (401 Expired ➔ Pipeline Locked ➔ Single Refresh Request ➔ Queue Replayed with New Token) + Android WorkManager guaranteed execution.">
+                                <img src="assets/images/architecture/concurrency-resilience.jpg" alt="Concurrency, Isolates and Dio Mutex Resilience Diagram" class="arch-diagram-img" loading="lazy">
+                                <div class="arch-diagram-overlay">
+                                    <span class="zoom-pill"><i class="fas fa-expand"></i> Click to Zoom Fullscreen</span>
+                                </div>
+                            </div>
+                            <div class="arch-spec-strip">
+                                <div class="arch-spec-chip"><i class="fas fa-microchip" style="color: #38bdf8;"></i> <div><strong>UI Isolate (60 FPS):</strong> Strict 16.6ms VSync frame budget without stutter</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-server" style="color: #a855f7;"></i> <div><strong>Worker Isolates:</strong> Heavy JSON parsing & cryptography on secondary threads</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-lock" style="color: #10b981;"></i> <div><strong>Dio Token Mutex:</strong> Locks concurrent requests during 401 token refresh</div></div>
+                                <div class="arch-spec-chip"><i class="fas fa-android" style="color: #f59e0b;"></i> <div><strong>OS WorkManager:</strong> Survives app kill, device reboot & battery doze</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. SERVICES SECTION & TECH STACK GRID (vinay_10, 11) -->
+        <section id="services" class="services-main-section section">
+            <div class="container">
+                <div class="section-header-pill">
+                    <span class="pill-dot"></span>
+                    Architecture & Systems
+                </div>
+
+                <div class="services-top-split">
+                    <!-- Left: Header & Architecture Pitch -->
+                    <div>
+                        <h2 class="section-title-large">Architecture & Development</h2>
+                        <p class="section-subtitle-text" style="margin-bottom: 24px;">
+                            Architecting resilient, production-ready mobile applications with Clean Architecture, unidirectional data streams, hardened security, and automated CI/CD pipelines.
+                        </p>
+
+                        <div class="services-tag-pills">
+                            <span class="tech-tag-pill">Flutter 3.x</span>
+                            <span class="tech-tag-pill">Dart 3.x</span>
+                            <span class="tech-tag-pill">Android (Kotlin)</span>
+                            <span class="tech-tag-pill">Clean Architecture</span>
+                            <span class="tech-tag-pill">BLoC / Cubit</span>
+                            <span class="tech-tag-pill">Riverpod</span>
+                            <span class="tech-tag-pill">GetX</span>
+                            <span class="tech-tag-pill">Provider</span>
+                            <span class="tech-tag-pill">Dio & REST</span>
+                            <span class="tech-tag-pill">SSL Pinning</span>
+                            <span class="tech-tag-pill">AES-256 Storage</span>
+                            <span class="tech-tag-pill">Pharma Lead Telecaller (Android)</span>
+                            <span class="tech-tag-pill">Fastlane & CI/CD</span>
+                        </div>
+
+                        <div class="services-action-btns">
+                            <button class="btn-pill-glow open-contact-modal">Start a Project</button>
+                            <a href="#projects" class="btn-pill-secondary">See Projects</a>
+                        </div>
+                    </div>
+
+                    <!-- Right: 3x4 Mobile Tech Stack Squircle Grid -->
+                    <div class="tech-icons-grid">
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #02569B 0%, #012d52 100%);" title="Flutter"><i class="devicon-flutter-plain" style="color: #54c5f8;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #0175C2 0%, #003a63 100%);" title="Dart"><i class="devicon-dart-plain" style="color: #2cb7f6;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #1b5e20 0%, #0a270d 100%);" title="Android Native"><i class="devicon-android-plain" style="color: #3ddc84;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #7F52FF 0%, #3e1ea8 100%);" title="Kotlin"><i class="devicon-kotlin-plain" style="color: #e288fa;"></i></div>
+
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #FF8F00 0%, #854a00 100%);" title="Firebase"><i class="devicon-firebase-plain" style="color: #ffca28;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #00838F 0%, #003d42 100%);" title="Dio & REST Client"><i class="fas fa-network-wired" style="color: #4dd0e1;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #E65100 0%, #612200 100%);" title="Hive & SQLite Local Cache"><i class="fas fa-database" style="color: #ffa726;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #00695C 0%, #002e28 100%);" title="Fastlane CI/CD"><i class="fas fa-rocket" style="color: #26a69a;"></i></div>
+
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #C62828 0%, #520f0f 100%);" title="Git & GitHub"><i class="devicon-git-plain" style="color: #f05032;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #D84315 0%, #541907 100%);" title="Postman"><i class="devicon-postman-plain" style="color: #ff6c37;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #1565C0 0%, #0a2b54 100%);" title="Google Play Console"><i class="devicon-google-plain" style="color: #4285f4;"></i></div>
+                        <div class="tech-icon-squircle tilt-card" style="background: radial-gradient(circle at 30% 30%, #37474F 0%, #1c2429 100%);" title="Apple App Store"><i class="devicon-apple-original" style="color: #ffffff;"></i></div>
+                    </div>
+                </div>
+
+                <!-- 4 Core Mobile Architecture Pillars -->
+                <div class="services-quad-bento">
+                    <!-- Pillar 1: Clean Architecture -->
+                    <div class="service-bento-card tilt-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-sitemap" style="color: #3b82f6;"></i>
+                            <h3>Core Clean Architecture</h3>
+                        </div>
+                        <p>Decoupled layered design strictly separating <strong>Presentation</strong> (Widgets & State Engines), <strong>Domain</strong> (UseCases & Entities), and <strong>Data</strong> (Repositories, Dio API, Hive). High testability with zero tight coupling.</p>
+                    </div>
+
+                    <!-- Pillar 2: Unidirectional Data Flow -->
+                    <div class="service-bento-card tilt-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-stream" style="color: #8b5cf6;"></i>
+                            <h3>State & Data Flow</h3>
+                        </div>
+                        <p>Deterministic unidirectional flow using <strong>BLoC & Cubit</strong>: <code>Events ➔ BLoC Business Handler ➔ Immutable State ➔ Reactive UI Rebuild</code>. RxDart debounce and optimistic UI updates for buttery 60 FPS.</p>
+                    </div>
+
+                    <!-- Pillar 3: Hardened Mobile Security -->
+                    <div class="service-bento-card tilt-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-shield-alt" style="color: #ef4444;"></i>
+                            <h3>Hardened Security</h3>
+                        </div>
+                        <p>Defense-in-depth: <strong>SSL/TLS Certificate Pinning</strong> with SHA-256 hashes, automatic JWT token refresh interceptors, <strong>AES-256 encrypted Hive boxes</strong>, and ProGuard / R8 code obfuscation.</p>
+                    </div>
+
+                    <!-- Pillar 4: DevOps Automation & CI/CD -->
+                    <div class="service-bento-card tilt-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-cogs" style="color: #06b6d4;"></i>
+                            <h3>CI/CD & DevOps</h3>
+                        </div>
+                        <p>Automated quality pipelines: GitHub Actions running <code>flutter analyze</code> & unit test suites on every PR. <strong>Fastlane</strong> for one-command release signing and direct delivery to Google Play & TestFlight.</p>
+                    </div>
+                </div>
+
+                <!-- End-to-End Mobile App Architecture & Data Flow Canvas (Inside Container for Consistent Alignment) -->
+                <div class="architecture-blueprint-wrap" style="margin-top: 60px;">
+                    <div class="architecture-blueprint-header" style="margin-bottom: 28px; text-align: left;">
+                        <div class="section-header-pill" style="margin-bottom: 14px; display: inline-flex;">
+                            <span class="pill-dot" style="background: #38bdf8;"></span>
+                            System Blueprint
+                        </div>
+                        <h2 class="section-title-large" style="font-size: 32px; margin-bottom: 10px;">Mobile App Architecture & Data Flow</h2>
+                        <p class="section-subtitle-text" style="margin-bottom: 0; max-width: 850px;">
+                            Clean Architecture · Multi-Paradigm State Management · Hardened Security · DevOps CI/CD
+                        </p>
+                    </div>
+
+                    <!-- 6 Fluid Floating Cards: Spacious, Non-Boxy & Modern Breathing Room -->
+                    <div class="arch-blueprint-grid">
+                        
+                        <!-- Card 1: Presentation Layer -->
+                        <div class="arch-blueprint-card card-presentation">
+                            <div class="arch-card-top-row">
+                                <div class="arch-icon-bubble cyan">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <span class="arch-pill-badge cyan">01 · Presentation</span>
+                            </div>
+                            <h4 class="arch-card-heading">Declarative UI & User Intent</h4>
+                            <p class="arch-card-desc">Decoupled UI layer designed for high-refresh 60 FPS responsiveness.</p>
+                            <div class="arch-card-chips">
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Flutter & Jetpack Compose Widgets</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> BlocBuilder, ConsumerWidget & Obx</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Responsive Layouts & OLED Dark Mode</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> 60 FPS Micro-UX & Debounced Validation</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: State Management -->
+                        <div class="arch-blueprint-card card-state">
+                            <div class="arch-card-top-row">
+                                <div class="arch-icon-bubble purple">
+                                    <i class="fas fa-sliders"></i>
+                                </div>
+                                <span class="arch-pill-badge purple">02 · State Management</span>
+                            </div>
+                            <h4 class="arch-card-heading">Multi-Paradigm Reactive Engines</h4>
+                            <p class="arch-card-desc">Deterministic unidirectional streams with crash telemetry.</p>
+                            <div class="arch-card-chips">
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> BLoC / Cubit: Enterprise Event Streams</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Riverpod 2.x & GetX Controllers</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> RxDart Concurrency & Transformers</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Optimistic UI & Offline Cache Sync</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Domain Core -->
+                        <div class="arch-blueprint-card card-domain">
+                            <div class="arch-card-top-row">
+                                <div class="arch-icon-bubble emerald">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <span class="arch-pill-badge emerald">03 · Domain Core</span>
+                            </div>
+                            <h4 class="arch-card-heading">Pure Business Rules & UseCases</h4>
+                            <p class="arch-card-desc">100% isolated pure Dart domain core with zero framework dependencies.</p>
+                            <div class="arch-card-chips">
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Single-Responsibility UseCases & Entities</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Abstract Repository Interface Contracts</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Zero Framework Tight Coupling</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Boundary Validation & Unit Tests (Mocktail)</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Data Sources -->
+                        <div class="arch-blueprint-card card-data">
+                            <div class="arch-card-top-row">
+                                <div class="arch-icon-bubble amber">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="arch-pill-badge amber">04 · Data Sources</span>
+                            </div>
+                            <h4 class="arch-card-heading">Cache-First & Remote Sync</h4>
+                            <p class="arch-card-desc">Dual local-remote orchestration with automated retry pipelines.</p>
+                            <div class="arch-card-chips">
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Repository Orchestration & DTO Mappers</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Dio REST, GraphQL & WebSockets</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Encrypted Hive & SQLite Room Cache</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> S3 Multipart Uploads & Offline Sync Workers</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Mobile Security -->
+                        <div class="arch-blueprint-card card-security">
+                            <div class="arch-card-top-row">
+                                <div class="arch-icon-bubble rose">
+                                    <i class="fas fa-shield-halved"></i>
+                                </div>
+                                <span class="arch-pill-badge rose">05 · Hardened Security</span>
+                            </div>
+                            <h4 class="arch-card-heading">Zero-Trust Network & Storage</h4>
+                            <p class="arch-card-desc">Multi-layered defensive engineering securing user & device data.</p>
+                            <div class="arch-card-chips">
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> SHA-256 SSL / TLS Certificate Pinning</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> AES-256 KeyStore & Keychain Vault</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Dio 401 QueuedInterceptors Token Mutex</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> ProGuard / R8 Code & Log Sanitization</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: DevOps CI/CD -->
+                        <div class="arch-blueprint-card card-devops">
+                            <div class="arch-card-top-row">
+                                <div class="arch-icon-bubble teal">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <span class="arch-pill-badge teal">06 · DevOps CI/CD</span>
+                            </div>
+                            <h4 class="arch-card-heading">Automated Build & Store Deploy</h4>
+                            <p class="arch-card-desc">End-to-end automated pipelines from code commit to app stores.</p>
+                            <div class="arch-card-chips">
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> GitHub Actions CI: Analyze & Test Execution</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Fastlane Match & Automated Keystore Signing</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Google Play & TestFlight Staged Delivery</div>
+                                <div class="arch-chip-item"><i class="fas fa-check"></i> Firebase Crashlytics & ANR Observability</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- Properly closes .container -->
+        </section>
+
+        <!-- 8. MEET VIVEK SECTION (vinay_12.png) -->
+        <section id="about" class="meet-section section">
+            <div class="container">
+                <div class="meet-bento-container tilt-card">
+                    <!-- Left Column: Bio & Experience -->
+                    <div class="meet-bio-content">
+                        <h2>Meet Vivek</h2>
+                        <p>
+                            I'm a <strong>Flutter & Android Developer</strong> with 2+ years of production experience building high-scale, reactive mobile applications across pharma marketplaces, enterprise CRM, telephony lead verification, mobility, and e-commerce domains.
+                        </p>
+                        <p style="margin-top: 14px; color: #a1a1aa; font-size: 15px; line-height: 1.7;">
+                            My development approach is grounded in <strong>Clean Architecture</strong>, multi-paradigm reactive state management with <strong>BLoC, Riverpod, GetX, and Provider</strong>, offline-first data sync (Hive/SQLite), and hardened mobile security (SSL pinning, biometric auth, encrypted storage). I build mobile systems designed for 60 FPS performance, low battery footprint, and zero regression with automated Fastlane CI/CD pipelines.
+                        </p>
+                        <div class="meet-divider"></div>
+                        <div class="meet-direct-contact-row">
+                            <a href="mailto:vivekkumar620166@gmail.com" class="meet-contact-pill" title="Email Vivek directly">
+                                <i class="fas fa-envelope"></i>
+                                <span>vivekkumar620166@gmail.com</span>
+                            </a>
+                            <a href="tel:+916201662075" class="meet-contact-pill" title="Call or WhatsApp Vivek">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 62016 62075</span>
+                            </a>
+                        </div>
+                        <div class="meet-tags-list">
+                            <span class="tech-tag-pill">2+ Years Production Experience</span>
+                            <span class="tech-tag-pill">Flutter 3.x & Dart</span>
+                            <span class="tech-tag-pill">Native Android (Kotlin)</span>
+                            <span class="tech-tag-pill">Clean Architecture</span>
+                            <span class="tech-tag-pill">BLoC / Cubit</span>
+                            <span class="tech-tag-pill">Riverpod</span>
+                            <span class="tech-tag-pill">GetX</span>
+                            <span class="tech-tag-pill">Provider</span>
+                            <span class="tech-tag-pill">Dio & REST APIs</span>
+                            <span class="tech-tag-pill">SSL Pinning & Security</span>
+                            <span class="tech-tag-pill">Pharma Lead Telecaller (Android)</span>
+                            <span class="tech-tag-pill">Fastlane & CI/CD</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Natural Color High-Res Portrait Frame -->
+                    <div class="meet-photo-frame">
+                        <img src="assets/images/vivek-profile.jpg?v=4" alt="Vivek Kumar Rai - Flutter & Android Developer">
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- 10. MOBILE ARCHITECTURE & PRODUCTION STANDARDS (Flutter & Android Developer) -->
+        <section id="mobile-standards" class="mobile-standards-section section">
+            <div class="container">
+                <div class="section-header-pill">
+                    <span class="pill-dot" style="background: #38bdf8;"></span>
+                    Mobile Production Standards
+                </div>
+
+                <h2 class="section-title-large">Mobile Architecture & Production Standards</h2>
+                <p class="section-subtitle-text">Optimized for 60 FPS performance, offline-first reliability, modular state architecture, and enterprise mobile security.</p>
+
+                <div class="standards-bento-grid">
+                    <!-- Card 1: Multi-Paradigm State Management -->
+                    <div class="standard-card tilt-card">
+                        <div class="standard-card-header">
+                            <div class="standard-icon-box blue"><i class="fas fa-cubes"></i></div>
+                            <span class="standard-pill-tag">State Architecture</span>
+                        </div>
+                        <h4 class="standard-card-title">Multi-Paradigm State Engines</h4>
+                        <p class="standard-card-desc">Production implementation of scalable state patterns selected specifically by domain requirements.</p>
+                        <div class="standard-chips-row">
+                            <div class="standard-chip"><strong>BLoC / Cubit:</strong> Unidirectional reactive event streams</div>
+                            <div class="standard-chip"><strong>Riverpod 2.x:</strong> Compile-safe dependency injection</div>
+                            <div class="standard-chip"><strong>GetX:</strong> High-velocity reactive controllers</div>
+                            <div class="standard-chip"><strong>Provider:</strong> Scoped tree state & lightweight models</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Offline-First & Local Persistence -->
+                    <div class="standard-card tilt-card">
+                        <div class="standard-card-header">
+                            <div class="standard-icon-box emerald"><i class="fas fa-database"></i></div>
+                            <span class="standard-pill-tag">Offline-First Engine</span>
+                        </div>
+                        <h4 class="standard-card-title">Local Persistence & Sync</h4>
+                        <p class="standard-card-desc">Zero-downtime offline storage with encrypted local vaults and optimistic server synchronization.</p>
+                        <div class="standard-chips-row">
+                            <div class="standard-chip"><strong>Hive NoSQL:</strong> Fast key-value boxes with AES encryption</div>
+                            <div class="standard-chip"><strong>Room & SQLite:</strong> Complex relational queries & Android Flow</div>
+                            <div class="standard-chip"><strong>Cache-First Repos:</strong> Instant UI rendering with background sync</div>
+                            <div class="standard-chip"><strong>Stale-While-Revalidate:</strong> Optimistic cache with automated background refresh</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Deep OS & Hardware Integration -->
+                    <div class="standard-card tilt-card">
+                        <div class="standard-card-header">
+                            <div class="standard-icon-box amber"><i class="fas fa-microchip"></i></div>
+                            <span class="standard-pill-tag">OS & Hardware</span>
+                        </div>
+                        <h4 class="standard-card-title">Native Android & Platform Channels</h4>
+                        <p class="standard-card-desc">Deep OS capabilities bridging Flutter runtime with native Android system services.</p>
+                        <div class="standard-chips-row">
+                            <div class="standard-chip"><strong>WorkManager:</strong> Guaranteed background tasks through Doze mode</div>
+                            <div class="standard-chip"><strong>MediaStore API:</strong> Granular audio file detection on Android 13/14</div>
+                            <div class="standard-chip"><strong>Telephony & Sensors:</strong> In-call listeners, camera, and biometric auth</div>
+                            <div class="standard-chip"><strong>Platform Channels:</strong> High-performance binary codec MethodChannels</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Hardened Mobile Security -->
+                    <div class="standard-card tilt-card">
+                        <div class="standard-card-header">
+                            <div class="standard-icon-box rose"><i class="fas fa-shield-virus"></i></div>
+                            <span class="standard-pill-tag">Zero-Trust Security</span>
+                        </div>
+                        <h4 class="standard-card-title">Defense-in-Depth Mobile Security</h4>
+                        <p class="standard-card-desc">Enterprise protection preventing network interception, reverse engineering, and credential leaks.</p>
+                        <div class="standard-chips-row">
+                            <div class="standard-chip"><strong>SSL Pinning:</strong> SHA-256 public key verification vs MITM attacks</div>
+                            <div class="standard-chip"><strong>Keystore / Keychain:</strong> Cryptographic token storage hardware-backed</div>
+                            <div class="standard-chip"><strong>ProGuard & R8:</strong> Code obfuscation & anti-tamper runtime checks</div>
+                            <div class="standard-chip"><strong>Token Mutex:</strong> Queued refresh mutex preventing race conditions</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: 60 FPS Performance Dashboard -->
+                    <div class="standard-card performance-card tilt-card">
+                        <div class="standard-card-header">
+                            <div class="standard-icon-box cyan"><i class="fas fa-tachometer-alt"></i></div>
+                            <span class="performance-live-badge"><span class="status-live-dot"></span> 60 FPS Target</span>
+                        </div>
+                        <h4 class="standard-card-title">Performance & Rendering Metrics</h4>
+                        <p class="standard-card-desc">Strict layout discipline eliminating UI thread jank and unnecessary widget rebuild cascades.</p>
+                        <div class="perf-metric-grid">
+                            <div class="perf-metric-item">
+                                <div class="perf-metric-num">16.6ms</div>
+                                <div class="perf-metric-lbl">Frame Budget</div>
+                            </div>
+                            <div class="perf-metric-item">
+                                <div class="perf-metric-num">0 Jank</div>
+                                <div class="perf-metric-lbl">UI Thread Drops</div>
+                            </div>
+                            <div class="perf-metric-item">
+                                <div class="perf-metric-num">Const</div>
+                                <div class="perf-metric-lbl">Widget Isolation</div>
+                            </div>
+                            <div class="perf-metric-item">
+                                <div class="perf-metric-num">Fastlane</div>
+                                <div class="perf-metric-lbl">CI/CD Automated</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. ANSWERS / FAQ ACCORDION (vinay_15.png) -->
+        <section class="faq-section section">
+            <div class="container">
+                <div class="faq-split-container">
+                    <!-- Left Side -->
+                    <div>
+                        <div class="section-header-pill">
+                            <span class="pill-dot"></span>
+                            FAQ'S
+                        </div>
+                        <h2 class="section-title-large">Answers</h2>
+                        <p class="section-subtitle-text" style="margin-bottom: 36px;">
+                            Find answers to common questions about my mobile development process, Flutter & Android architecture, and client collaborations.
+                        </p>
+                        <button class="btn-pill-glow open-contact-modal">Ask a Question</button>
+                    </div>
+
+                    <!-- Right Side: Accordion Items -->
+                    <div class="faq-accordion-list">
+                        <!-- FAQ 1: Services Provided -->
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <h4>What services do you provide as a Flutter & Android Developer?</h4>
+                                <div class="accordion-icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>I specialize in end-to-end mobile development: building high-performance cross-platform applications in Flutter (iOS & Android) and native Android apps (Kotlin & Jetpack Compose). I deliver production Clean Architecture, multi-paradigm state management (BLoC / Cubit, Riverpod, GetX, Provider), offline-first local databases (Hive / Room), secure REST APIs via Dio, and automated Play Store and App Store deployments.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2: How to Start Working -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>How do I start working with you on a mobile project?</h4>
+                                <div class="accordion-icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>You can reach out through the contact button or email me directly at <a href="mailto:vivekkumar620166@gmail.com" style="color: #54c5f8; text-decoration: underline;">vivekkumar620166@gmail.com</a>. We begin with a technical discovery call to review your product roadmap, target platforms, backend API specs, and UI handoff. Following this, I provide a structured delivery roadmap with sprint milestones and regular demo builds.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3: Tech Stack & Tools -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>What mobile tech stack, libraries, and tools do you use?</h4>
+                                <div class="accordion-icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>My daily development toolkit includes Flutter 3.x, Dart 3.x, Android Studio, Kotlin, and Jetpack Compose. For state management, I architect systems using BLoC / Cubit, Riverpod 2.x, GetX, and Provider tailored to project scale and architectural requirements. For networking and persistence, I use Dio, Retrofit, Hive, SQLite/Room, along with SSL Certificate Pinning, AES-256 storage, and Fastlane / GitHub Actions for CI/CD automation.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4: Performance & Security -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>How do you ensure 60 FPS performance and mobile security?</h4>
+                                <div class="accordion-icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>I enforce strict 60/120 FPS standards with zero UI thread jank by using const widget constructors, RepaintBoundaries, and virtualized list pagination. For security, I implement strict SHA-256 SSL/TLS Certificate Pinning against MITM inspection, encrypted local storage (Hive AES-256 & Android Keystore), ProGuard / R8 bytecode obfuscation, and runtime root/jailbreak detection.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5: Timeline -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>How long does a mobile app project take?</h4>
+                                <div class="accordion-icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Timelines depend on complexity and platform scope. Rapid MVP releases or specific feature module sprints typically take 2 to 4 weeks, while comprehensive enterprise mobile applications featuring custom design systems, complex offline sync, payment gateways, and dual-store releases typically span 6 to 12 weeks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. LIQUID SMOKE FOOTER BANNER (vinay_16.png) -->
+        <footer id="contact" class="footer-banner-section">
+            <div class="footer-wave-background"></div>
+            <div class="container footer-content-centered">
+                <div class="section-header-pill" style="margin-bottom: 24px;">
+                    <span class="pill-dot"></span>
+                    My Words
+                </div>
+
+                <h2 class="footer-main-headline">
+                    Curious about what we can create together? Let's bring something extraordinary to life!
+                </h2>
+
+                <!-- Direct Contact Cards Outside on Page -->
+                <div class="footer-direct-contact-grid">
+                    <a href="mailto:vivekkumar620166@gmail.com" class="direct-contact-card email-card" title="Email Vivek Kumar directly">
+                        <div class="contact-card-icon-box mail-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-type">DIRECT EMAIL</span>
+                            <span class="contact-card-value">vivekkumar620166@gmail.com</span>
+                        </div>
+                        <div class="contact-card-action-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+
+                    <a href="tel:+916201662075" class="direct-contact-card phone-card" title="Call or WhatsApp Vivek Kumar">
+                        <div class="contact-card-icon-box phone-box">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-type">PHONE & WHATSAPP</span>
+                            <span class="contact-card-value">+91 62016 62075</span>
+                        </div>
+                        <div class="contact-card-action-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-action-buttons">
+                    <a href="assets/Vivek_Kumar_Rai_Resume.pdf?v=2" target="_blank" class="btn-pill-glow" style="padding: 14px 32px; font-size: 15.5px;">
+                        <i class="fas fa-file-pdf" style="margin-right: 8px;"></i>
+                        <span>View Resume</span>
+                    </a>
+                    <a href="https://wa.me/916201662075" target="_blank" rel="noopener noreferrer" class="btn-pill-glow-border whatsapp-pill-btn" style="padding: 14px 30px; font-size: 15.5px;">
+                        <i class="fab fa-whatsapp" style="margin-right: 8px; color: #25d366;"></i>
+                        <span>WhatsApp Chat</span>
+                    </a>
+                </div>
+
+                <div class="footer-social-row">
+                    <a href="https://www.linkedin.com/in/vivek-kumar-405091215" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <span>|</span>
+                    <a href="https://github.com/VivekKumar620166" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <span>|</span>
+                    <a href="mailto:vivekkumar620166@gmail.com" title="Email"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Architecture Diagram Lightbox Modal -->
+    <div class="diag-lightbox-overlay" id="diagLightboxOverlay" aria-hidden="true">
+        <div class="diag-lightbox-container">
+            <button class="diag-lightbox-close" id="diagLightboxClose" aria-label="Close fullscreen diagram">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="diag-lightbox-header">
+                <h4 id="diagLightboxTitle" class="diag-lightbox-title">System Architecture Diagram</h4>
+            </div>
+            <div class="diag-lightbox-media">
+                <img id="diagLightboxImg" src="" alt="Architecture Diagram High Resolution" class="diag-lightbox-img">
+            </div>
+            <p id="diagLightboxCaption" class="diag-lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Interactive Script -->
+    <script src="scripts/main.js?v=5"></script>
+</body>
+</html>
