@@ -1,0 +1,2 @@
+# Treat large component styles as vendored design system so JavaScript & HTML are prioritized in GitHub Linguist
+styles/components.css linguist-vendored=true
