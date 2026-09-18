@@ -11,11 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
   }
 
-  // 1. GSAP Custom Cursor Dot & Magnetic Aura Follower
+  // 1. GSAP Custom Cursor Dot & Magnetic Aura Follower (Strictly desktop only)
   const cursorDot = document.getElementById('cursorDot');
   const cursorAura = document.getElementById('cursorAura');
+  const isDesktopPointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth > 1024;
 
-  if (cursorDot && cursorAura && window.matchMedia('(pointer: fine)').matches) {
+  if (cursorDot && cursorAura) {
+    if (!isDesktopPointer) {
+      cursorDot.style.display = 'none';
+      cursorAura.style.display = 'none';
+      cursorDot.remove();
+      cursorAura.remove();
+    } else {
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
 
@@ -60,38 +67,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
+    }
   }
 
-  // 2. 3D Card Tilt Effect on Mouse Move with GSAP
+  // 2. 3D Card Tilt Effect on Mouse Move with GSAP (Desktop only)
   const tiltCards = document.querySelectorAll('.tilt-card');
+  const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth > 1024;
+
   tiltCards.forEach((card) => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
+    if (isFinePointer) {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
 
-      const rotateX = ((y - centerY) / centerY) * -6;
-      const rotateY = ((x - centerX) / centerX) * 6;
+        const rotateX = ((y - centerY) / centerY) * -6;
+        const rotateY = ((x - centerX) / centerX) * 6;
 
-      gsap.to(card, {
-        rotateX: rotateX,
-        rotateY: rotateY,
-        transformPerspective: 1000,
-        ease: 'power1.out',
-        duration: 0.3
+        gsap.to(card, {
+          rotateX: rotateX,
+          rotateY: rotateY,
+          transformPerspective: 1000,
+          ease: 'power1.out',
+          duration: 0.3
+        });
       });
-    });
 
-    card.addEventListener('mouseleave', () => {
-      gsap.to(card, {
-        rotateX: 0,
-        rotateY: 0,
-        ease: 'power2.out',
-        duration: 0.5
+      card.addEventListener('mouseleave', () => {
+        gsap.to(card, {
+          rotateX: 0,
+          rotateY: 0,
+          ease: 'power2.out',
+          duration: 0.5
+        });
       });
-    });
+    }
 
     // If card has data-url and user clicked anywhere on card (not directly on link)
     card.addEventListener('click', (e) => {

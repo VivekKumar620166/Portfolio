@@ -126,6 +126,12 @@ body {
   padding: 0 28px;
 }
 
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
 /* Typography Base */
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
@@ -183,6 +189,17 @@ button {
 body:hover .custom-cursor-dot,
 body:hover .custom-cursor-aura {
   opacity: 1;
+}
+
+/* Strictly hide custom cursor on touch devices, tablets, and phones */
+@media (hover: none), (pointer: coarse), (max-width: 1024px) {
+  .custom-cursor-dot,
+  .custom-cursor-aura {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 }
 
 /* Section Common Layout */
